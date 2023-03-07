@@ -22,9 +22,15 @@ defmodule Cards do
 
   def create_cards do
     ["Ace", "Spades", "King"]
+    values = ["Ace", "Spades", "King"]
+    suits = ["Spades", "Clubs", "Diamonds", "Random"]
+    
+    for suit <- suits, value <- values  do
+      "#{value} of #{suit}"
+    end
   end
   
-  def shuffle(card_deck)
+  def shuffle(card_deck) do
     Enum.shuffle(card_deck)
   end
   
@@ -32,3 +38,4 @@ defmodule Cards do
    Enum.member?(deck, card)
 
  end
+end
