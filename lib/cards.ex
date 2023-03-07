@@ -19,4 +19,16 @@ defmodule Cards do
   def helloWorld do
     "hi there"
   end
-end
+
+  def create_cards do
+    ["Ace", "Spades", "King"]
+  end
+  
+  def shuffle(card_deck)
+    Enum.shuffle(card_deck)
+  end
+  
+ def if_contains?(deck, card) do
+   Enum.member?(deck, card)
+
+ end
