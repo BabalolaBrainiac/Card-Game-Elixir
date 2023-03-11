@@ -51,7 +51,6 @@ defmodule Cards do
  def load(filename) do
 {status, binary} = File.read(filename)
  :erlang.binary_to_term binary
-
  end
 
 end
